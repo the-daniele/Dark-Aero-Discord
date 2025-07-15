@@ -126,8 +126,8 @@ domain("discord.com") {
 
   /* Square Avatars */
   .avatar_c19a55 {
-    border: 2px solid rgba(85, 85, 85, 0.562);
-    border-radius: 3px;
+    border: 2px solid rgba(85, 85, 85, 0.5);
+    border-radius: 4px;
   }
 
   /* Send Message Bar */
