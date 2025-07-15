@@ -1,7 +1,7 @@
 /**
- * @name Aero Discord
+ * @name Dark Aero Discord
  * @author Daniele63
- * @description Dark aero theme for Discord.
+ * @description Simple Dark aero theme for Discord.
  * @version 1.0
  */
 
@@ -49,6 +49,7 @@
 /* Servers Sidebar */
 .wrapper_ef3116 {
   background-color: rgb(12, 12, 15);
+  padding-top: 3px;
 }
 
 /* Channels Sidebar */
@@ -97,6 +98,11 @@
   color: rgb(112, 136, 255);
 }
 
+/* Search Results */
+.searchResultsWrap_a9e706 {
+  background-color: rgba(27, 27, 32, 0.8);
+}
+
 /* --------------------- */
 /* CONTENT IN THE MIDDLE */
 /* --------------------- */
@@ -109,10 +115,6 @@
 /* Gradient to remove */
 .showToolbar__9293f::after {
   content: none;
-}
-/* Highlight color for buttons */
-.selected__9293f svg {
-  color: rgb(90, 106, 255) !important;
 }
 
 /* Send Message Bar */
@@ -128,9 +130,20 @@
 /* ------------- */
 /* SETTINGS PAGE */
 /* ------------- */
-
 /* Left Sidebar */
 .sidebarRegionScroller__23e6b {
   background-color: var(--main-accent-background);
   border-right: 1px solid var(--border-main-color);
+}
+
+/* CREDITS TO ATLANTIS FOR THIS SECTION https://userstyles.world/style/21588/no-header-bar-fixed-bottom-margin-no-sponsor */
+
+/*reduce margin-bottom text area*/
+.visual-refresh [class^="channelBottomBarArea_"] > [class^="channelTextArea_"] {
+  margin-bottom: 10px;
+}
+
+/* TOP BAR */
+.bar_c38106 {
+  background-color: rgb(12, 12, 15);
 }

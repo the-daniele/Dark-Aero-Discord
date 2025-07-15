@@ -1,3 +1,10 @@
+/* ==UserStyle==
+@name           ?
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A new userstyle
+@author         Me
+==/UserStyle== */
 @-moz-document domain("discord.com") {
   /**
  * @name Dark Aero Discord
@@ -99,6 +106,10 @@
   .container__91a9d strong {
     color: rgb(112, 136, 255);
   }
+  /* Search Results */
+  .searchResultsWrap_a9e706 {
+    background-color: rgba(27, 27, 32, 0.8);
+  }
 
   /* --------------------- */
   /* CONTENT IN THE MIDDLE */
@@ -111,10 +122,6 @@
   /* Gradient to remove */
   .showToolbar__9293f::after {
     content: none;
-  }
-  /* Highlight color for buttons */
-  .selected__9293f svg {
-    color: rgb(111, 125, 255) !important;
   }
 
   /* Send Message Bar */
