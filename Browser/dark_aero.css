@@ -5,7 +5,8 @@
 @description    Dark Aero theme for Discord
 @author         the-daniele
 ==/UserStyle== */
-@-moz-document domain("discord.com") {
+@-moz-document domain("https://discord.com")
+{
   /* ---------------------------- */
   /* CHANGE BACKGROUND IMAGE HERE */
   /* ---------------------------- */
