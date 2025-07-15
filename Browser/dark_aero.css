@@ -124,6 +124,11 @@
     content: none;
   }
 
+  /* Message Wrapper */
+  .scrollerContent__36d07 {
+    padding-bottom: 15px;
+  }
+
   /* Send Message Bar */
   .scrollableContainer__74017 {
     background: linear-gradient(
@@ -132,6 +137,19 @@
       rgba(36, 41, 53, 0.7) 100%
     );
     border: 1px solid rgb(0, 0, 0);
+    padding: 2px;
+  }
+
+  /* Typing Indicator */
+  .typing_b88801 {
+    background-color: rgba(37, 39, 49, 0.9);
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    backdrop-filter: blur(2px);
+    border-radius: 100px 100px 0px 0px;
+    margin-bottom: 66px;
+    padding: 0px 15px;
   }
 
   /* ------------- */
@@ -200,6 +218,6 @@
   .visual-refresh
     [class^="channelBottomBarArea_"]
     > [class^="channelTextArea_"] {
-    margin-bottom: 10px;
+    margin-bottom: 7px;
   }
 }
