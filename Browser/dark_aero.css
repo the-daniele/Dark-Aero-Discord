@@ -5,8 +5,8 @@
 @description    Dark Aero theme for Discord
 @author         the-daniele
 ==/UserStyle== */
-@-moz-document domain("https://discord.com"), domain("discord.com")
-{
+@-moz-document domain("https://discord.com"),
+domain("discord.com") {
   /* ---------------------------- */
   /* CHANGE BACKGROUND IMAGE HERE */
   /* ---------------------------- */
@@ -122,6 +122,12 @@
   /* Message Wrapper */
   .scrollerContent__36d07 {
     padding-bottom: 17px;
+  }
+
+  /* Square Avatars */
+  .avatar_c19a55 {
+    border: 2px solid rgba(85, 85, 85, 0.562);
+    border-radius: 3px;
   }
 
   /* Send Message Bar */
