@@ -4,4 +4,4 @@ For Vencord/BetterDiscord download the css file in the Client folder.
 
 <img src="thumbnail.png" alt="Preview">
 
-Latest update: Fixed the search background being transparent, made top bar on client version black.
+15/07/2025 update: Fixed the search background being transparent, made top bar on client version black.
