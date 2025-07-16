@@ -119,11 +119,6 @@ domain("discord.com") {
     content: none;
   }
 
-  /* Message Wrapper */
-  .scrollerContent__36d07 {
-    padding-bottom: 20px;
-  }
-
   /* Square Avatars */
   .avatar_c19a55 {
     border: 2px solid rgba(85, 85, 85, 0.5);
@@ -139,18 +134,6 @@ domain("discord.com") {
     );
     border: 1px solid rgb(0, 0, 0);
     padding: 2px;
-  }
-
-  /* Typing Indicator */
-  .typing_b88801 {
-    background-color: rgba(37, 39, 49, 0.9);
-    border-top: 1px solid black;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-    backdrop-filter: blur(2px);
-    border-radius: 100px 100px 0px 0px;
-    margin-bottom: 66px;
-    padding: 0px 15px;
   }
 
   /* ------------- */
@@ -199,12 +182,6 @@ domain("discord.com") {
     width: calc(100% - 40px);
   }
 
-  /*check closed mod menu for space inbox*/
-  /*
-    .visual-refresh:not(:has([class^="guildSidebar_"])) {
-        --space-search-inbox: 40px;
-    }
-    */
   /*hide inbox on mod menu*/
   .visual-refresh [class^="guildSidebar_"] {
     z-index: 600;
@@ -213,12 +190,5 @@ domain("discord.com") {
   /*padding top left menu*/
   .visual-refresh [class^="sidebar_"] > [class*="guilds_"] {
     padding-top: 10px;
-  }
-
-  /*reduce margin-bottom text area*/
-  .visual-refresh
-    [class^="channelBottomBarArea_"]
-    > [class^="channelTextArea_"] {
-    margin-bottom: 7px;
   }
 }
