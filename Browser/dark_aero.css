@@ -136,6 +136,11 @@ domain("discord.com") {
     padding: 2px;
   }
 
+  /* Profile */
+  .outer_c0bea0 {
+    background-color: var(--main-accent-background);
+  }
+
   /* ------------- */
   /* SETTINGS PAGE */
   /* ------------- */
