@@ -22,8 +22,8 @@ domain("discord.com") {
   /* TRANSPARENCY */
   /* ------------ */
   .theme-dark {
-    --background-base-lowest: rgba(0, 11, 30, 0) !important;
-    --background-base-lower: rgba(0, 11, 30, 0) !important;
+    --background-base-lowest: rgba(0, 11, 30, 0.1) !important;
+    --background-base-lower: rgba(0, 11, 30, 0.1) !important;
   }
 
   /* ---------------- */
