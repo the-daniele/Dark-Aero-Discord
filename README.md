@@ -1,4 +1,4 @@
-Dark Aero theme for Discord.
+Dark Aero theme for Discord by Daniele63.
 
 TO INSTALL:
 
