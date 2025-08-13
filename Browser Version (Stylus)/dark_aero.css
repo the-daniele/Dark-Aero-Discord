@@ -1,0 +1,199 @@
+/* ==UserStyle==
+@name           ?
+@namespace      https://userstyles.world/user/the-daniele
+@version        1.0.0
+@description    Dark Aero theme for Discord
+@author         the-daniele
+==/UserStyle== */
+@-moz-document domain("https://discord.com"),
+domain("discord.com") {
+  /* ---------------------------- */
+  /* CHANGE BACKGROUND IMAGE HERE */
+  /* ---------------------------- */
+  .base_c48ade {
+    background-image: url("https://i.imgur.com/PIZOuhm.jpeg") !important;
+    background-color: rgba(9, 24, 51, 0) !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  /* ------------ */
+  /* TRANSPARENCY */
+  /* ------------ */
+  .theme-dark {
+    --background-base-lowest: rgba(0, 11, 30, 0.1) !important;
+    --background-base-lower: rgba(0, 11, 30, 0.1) !important;
+  }
+
+  /* ---------------- */
+  /* GLOBAL VARIABLES */
+  /* ---------------- */
+  :root {
+    /* Borders that separate sections */
+    --border-main-color: rgb(48, 48, 68);
+
+    /* Backgrounds behind most sections */
+    --main-accent-background: rgb(21, 21, 27);
+
+    /* Aero gradients */
+    --main-gradients: linear-gradient(
+      to bottom,
+      rgba(119, 119, 119, 0.925) 0%,
+      rgba(97, 97, 97, 0.925) 10%,
+      rgba(35, 35, 35, 0.925) 55%,
+      rgba(0, 0, 0, 0.925) 56%,
+      rgba(0, 0, 0, 0.925) 60%,
+      rgba(32, 32, 32, 0.925) 100%
+    );
+  }
+
+  /* ----------------- */
+  /* LEFT SIDE CONTENT */
+  /* ----------------- */
+  /* Servers Sidebar */
+  .wrapper_ef3116 {
+    background-color: rgb(12, 12, 15);
+    padding-top: 3px;
+  }
+
+  /* Channels Sidebar */
+  .container__2637a {
+    background-color: var(--main-accent-background);
+    border-right: 1px solid var(--border-main-color);
+  }
+
+  /* Under Channel and Servers Sidebar */
+  .sidebar_c48ade,
+  .sidebar_c48ade::after {
+    background-color: var(--main-accent-background);
+  }
+  .sidebar_c48ade::after {
+    border-top: 1px solid var(--border-main-color);
+    padding: 31.5px;
+  }
+
+  /* Bottom Left Setting Bar with avatar, mic, headphone, and cogwheel button */
+  .container__37e49 {
+    background: var(--main-gradients);
+  }
+
+  /* ------------------ */
+  /* RIGHT SIDE CONTENT */
+  /* ------------------ */
+  /* Members List Gradient */
+  .members_c8ffbb {
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(20, 20, 20, 0.7) 20%,
+      rgb(0, 0, 0) 100%
+    );
+  }
+  /* Individual Members */
+  .container__91a9d {
+    background-color: rgba(139, 139, 139, 0);
+    color: rgb(206, 215, 255);
+    border-radius: 3px;
+    margin-bottom: 5px;
+  }
+  /* Secondary Text Color in members list */
+  .container__91a9d strong {
+    color: rgb(112, 136, 255);
+  }
+  /* Search Results */
+  .searchResultsWrap_a9e706 {
+    background-color: rgba(27, 27, 32, 0.8);
+  }
+
+  /* --------------------- */
+  /* CONTENT IN THE MIDDLE */
+  /* --------------------- */
+  /* Top bar with search bar etc */
+  .title_f75fb0 {
+    background: var(--main-gradients) !important;
+    border: none !important;
+  }
+  /* Gradient to remove */
+  .showToolbar__9293f::after {
+    content: none;
+  }
+
+  /* Square Avatars */
+  .avatar_c19a55 {
+    border: 2px solid rgba(85, 85, 85, 0.5);
+    border-radius: 4px;
+  }
+
+  /* Send Message Bar */
+  .scrollableContainer__74017 {
+    background: linear-gradient(
+      180deg,
+      rgba(75, 83, 102, 0.3) 0%,
+      rgba(36, 41, 53, 0.7) 100%
+    );
+    border: 1px solid rgb(0, 0, 0);
+    padding: 2px;
+  }
+
+  /* Profile */
+  .outer_c0bea0 {
+    background-color: var(--main-accent-background);
+  }
+
+  /* ------------- */
+  /* SETTINGS PAGE */
+  /* ------------- */
+  /* Left Sidebar */
+  .sidebarRegionScroller__23e6b {
+    background-color: var(--main-accent-background);
+    border-right: 1px solid var(--border-main-color);
+  }
+
+  /* CREDITS TO ATLANTIS FOR THIS SECTION https://userstyles.world/style/21588/no-header-bar-fixed-bottom-margin-no-sponsor */
+  /*redifine layout grid - hide header*/
+  .visual-refresh [class^="base_"] {
+    /*grid-template-rows: [top] 0px [titleBarEnd] min-content [noticeEnd] 1fr [end];*/
+    --custom-app-top-bar-height: 0px;
+    margin-top: -1px;
+  }
+
+  /* Hide Server Info on Top */
+  .title__85643 {
+    display: none;
+  }
+
+  /* hide top bar elements without changing space (for max compatibility with skins transparency) */
+  .visual-refresh
+    > [class^="base_"]
+    > [class^="bar_"]
+    > *:not([class^="trailing_"]) {
+    visibility: hidden;
+  }
+
+  /*hide info_link for replace inbox at right*/
+  .visual-refresh [class^="trailing_"] > a:nth-of-type(1) {
+    display: none;
+  }
+
+  /*replace inbox*/
+  .visual-refresh [class^="trailing_"] {
+    /*top: 5px;*/
+    top: 24px;
+    z-index: 500;
+  }
+  .visual-refresh [class^="upperContainer__"] {
+    /*width: calc(100% - var(--space-search-inbox, 0px));*/
+    width: calc(100% - 40px);
+  }
+
+  /*hide inbox on mod menu*/
+  .visual-refresh [class^="guildSidebar_"] {
+    z-index: 600;
+  }
+
+  /*padding top left menu*/
+  .visual-refresh [class^="sidebar_"] > [class*="guilds_"] {
+    padding-top: 10px;
+  }
+}
