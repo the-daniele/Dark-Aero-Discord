@@ -6,4 +6,4 @@ Download the .css file and place it your themes folder that you got from BetterD
 
 For Browser, install the Stylus extension and download the theme here: https://userstyles.world/style/23205
 
-<img src="https://userstyles.world/preview/23205/2.webp" alt="Preview">
+<img src="https://userstyles.world/preview/23205/3.webp" alt="Preview">
